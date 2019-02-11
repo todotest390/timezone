@@ -14,6 +14,10 @@ class TimezonesServiceProvider extends ServiceProvider
     public function register()
     {
         include __DIR__.'/routes/web.php';
+        $this->app->register(Learning\Timezones\TimezonesServiceProvider::class);
+        $this->app->singleton(Learning\Timezones\TimezonesServiceProvider::class, function (Application $app) {
+            return new TimezonesServiceProvider();
+        });
         $this->app->make('Learning\Timezones\TimezonesController');
     }
 

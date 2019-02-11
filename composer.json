@@ -7,23 +7,14 @@
             "email": "dan007@mailinator.com"
         }
     ],
-    "repositories": [
-        {
-            "type": "path",
-            "url": "packages/learning/timezones",
-            "options": {
-                "symlink": true
-            }
-        }
-    ],
-    "minimum-stability": "dev",
-    "require": {
-        "learning/timezones": "dev"
-    },
     "autoload": {
         "psr-4": {
             "Learning\\Timezones\\":"vendor/learning/timezones/src/"
         }
+    },
+    "minimum-stability": "dev",
+    "require": {
+        "learning/timezones": "dev"
     },
     "scripts": {
         "post-install-cmd": [

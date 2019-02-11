@@ -8,14 +8,13 @@
         }
     ],
     "autoload": {
-        "App\\": "app/",
         "psr-4": {
-            "Learning\\Timezones\\":"vendor/learning/timezones/src/"
+            "Learning\\Timezones\\":"src/"
         }
     },
     "minimum-stability": "dev",
     "require": {
-        "learning/timezones": "dev"
+
     },
     "scripts": {
         "post-install-cmd": [

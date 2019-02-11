@@ -7,7 +7,6 @@
             "email": "dan007@mailinator.com"
         }
     ],
-    "minimum-stability": "dev",
     "repositories": [
         {
             "type": "path",
@@ -18,7 +17,7 @@
         }
     ],
     "require": {
-        "learning/timezones": "dev-master"
+        "learning/timezones": "*"
     },
     "extra": {
         "laravel": {

@@ -16,8 +16,9 @@
             }
         }
     ],
+    "minimum-stability": "dev",
     "require": {
-        "learning/timezones": "*"
+        "learning/timezones": "dev"
     },
     "extra": {
         "laravel": {

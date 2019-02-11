@@ -26,6 +26,7 @@ class TimezonesServiceProvider extends ServiceProvider
      */
     public function register()
     {
+        print_r('asdasd');die;
         include __DIR__.'/routes/web.php';
         $this->app->bind(
             'Learning\Timezones\TimezonesController'

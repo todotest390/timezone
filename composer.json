@@ -22,7 +22,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Learning\\Timezones\\":"learning/timezones/src/"
+            "Learning\\Timezones\\":"vendor/learning/timezones/src/"
         }
     },
     "scripts": {

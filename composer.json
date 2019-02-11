@@ -1,0 +1,31 @@
+{
+    "name": "learning/timezones",
+    "description": "Demo-package to show time",
+    "authors": [
+        {
+            "name": "dan",
+            "email": "dan007@mailinator.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "repositories": [
+        {
+            "type": "path",
+            "url": "packages/learning/timezones",
+            "options": {
+                "symlink": true
+            }
+        }
+    ],
+    "require": {
+        // ...
+        "learning/timezones": "dev-master"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Learning\\Timezones\\TimezonesServiceProvider"
+            ]
+        }
+    }
+}

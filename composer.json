@@ -8,6 +8,7 @@
         }
     ],
     "autoload": {
+        "App\\": "app/",
         "psr-4": {
             "Learning\\Timezones\\":"vendor/learning/timezones/src/"
         }

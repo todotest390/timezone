@@ -13,10 +13,9 @@ class TimezonesServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->loadViewsFrom(__DIR__.'/views', 'timezones');
         $this->publishes([
-        __DIR__.'/views' => base_path('resources/views/learning/timezones'),
-    ]);
+            __DIR__.'config/timezone.php' => config_path('timezone.php')
+        ], 'config');
     }
 
     /**
@@ -26,7 +25,7 @@ class TimezonesServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        include __DIR__.'/routes/web.php';
-        $this->app->make('Learning\Timezones\TimezonesController');
+//        include __DIR__.'/routes/web.php';
+//        $this->app->make('Learning\Timezones\TimezonesController');
     }
 }

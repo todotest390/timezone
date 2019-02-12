@@ -1,33 +1,40 @@
 {
-    "name": "learning/timezones",
-    "description": "Demo-package to show time",
-    "authors": [
-        {
-            "name": "dan",
-            "email": "dan007@mailinator.com"
-        }
-    ],
-    "autoload": {
-        "psr-4": {
-            "Learning\\Timezones\\":"src/"
-        }
-    },
-    "minimum-stability": "dev",
-    "require": {
-
-    },
-    "scripts": {
-        "post-install-cmd": [
-            "php artisan clear-compiled",
-            "php artisan optimize"
-        ],
-        "post-update-cmd": [
-            "php artisan clear-compiled",
-            "php artisan optimize"
-        ],
-        "post-create-project-cmd": [
-            "php -r \"copy('.env.example', '.env');\"",
-            "php artisan key:generate"
-        ]
+  "name": "learning/timezones",
+  "description": "Demo-package to show time",
+  "authors": [
+    {
+      "name": "dan",
+      "email": "dan007@mailinator.com"
     }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Learning\\Timezones\\":"src/"
+    }
+  },
+  "minimum-stability": "stable",
+  "require": {
+
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Learning\\Timezones\\TimezonesServiceProvider"
+      ]
+    }
+  },
+  "scripts": {
+    "post-install-cmd": [
+      "php artisan clear-compiled",
+      "php artisan optimize"
+    ],
+    "post-update-cmd": [
+      "php artisan clear-compiled",
+      "php artisan optimize"
+    ],
+    "post-create-project-cmd": [
+      "php -r \"copy('.env.example', '.env');\"",
+      "php artisan key:generate"
+    ]
+  }
 }
